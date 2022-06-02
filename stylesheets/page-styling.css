@@ -41,6 +41,30 @@ nav {
   bullet points, margin, or padding.
 */
 nav ul {
+  /* This changes the container to become a Flexible Box container. */
+  display: -ms-flexbox;
+  display: -moz-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+
+  /*
+    This makes it so that if the window gets too small, then content will go to the next line.
+  */
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  /*
+    This aligns the items in the text container to have equal space on the left and right side
+    of the container and makes all items fit evenly inside the remaining space.
+  */
+  -ms-box-pack: distribute;
+  -moz-box-pack: justify;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+
   list-style: none;
   margin: 0;
   padding: 0;
